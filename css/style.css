@@ -1,0 +1,170 @@
+body {
+  font-size: .12rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  background-color: #ededed; }
+
+.header {
+  font-size: .14rem;
+  height: 0.55rem;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  color: #000; }
+  .header .search {
+    position: absolute;
+    display: inline-block;
+    right: 0.15rem;
+    top: 0.14rem; }
+    .header .search i {
+      color: #ccc; }
+  .header .list {
+    height: 0.55rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header .list li {
+      text-align: center;
+      line-height: 0.55rem; }
+      .header .list li a {
+        padding: 0.1rem; }
+    .header .list .acb {
+      border-bottom: 2px solid #007aff;
+      color: #007aff; }
+
+.contents {
+  flex: 1;
+  overflow-y: scroll; }
+  .contents .swiper-container {
+    height: 1.23rem; }
+    .contents .swiper-container .swiper-slide img {
+      width: 100%;
+      height: 100%; }
+    .contents .swiper-container .swiper-pagination span {
+      opacity: 0.7 !important; }
+  .contents .nav {
+    height: 1.1rem;
+    display: flex;
+    background-color: #fff; }
+    .contents .nav dl {
+      flex: 1;
+      text-align: center;
+      padding: 0.15rem 0 0.1rem 0; }
+      .contents .nav dl dt {
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 0.15rem;
+        line-height: 0.4rem;
+        text-align: center;
+        margin: 0 auto; }
+        .contents .nav dl dt i {
+          color: #fff;
+          vertical-align: middle; }
+  .contents .limit {
+    height: 0.73rem; }
+    .contents .limit img {
+      width: 100%;
+      height: 90%; }
+  .contents .owner {
+    background-color: #fff; }
+    .contents .owner #list {
+      display: flex;
+      flex-wrap: wrap; }
+      .contents .owner #list li {
+        width: 24.5%;
+        padding-top: 0.1rem;
+        height: 0.84rem;
+        line-height: 0.36rem;
+        text-align: center;
+        border-bottom: 1px solid #ccc; }
+      .contents .owner #list .br {
+        border-right: 1px solid #ccc; }
+  .contents .rush h5 {
+    position: relative;
+    padding: 0.1rem 0; }
+  .contents .rush p {
+    display: inline-block;
+    font: 12pt sans;
+    background: #222;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 23px;
+    position: absolute;
+    right: 0.1rem;
+    vertical-align: middle; }
+  .contents .home {
+    background-color: #fff;
+    height: 1.6rem; }
+    .contents .home h5 {
+      padding: 0.1rem 0.1rem 0.1rem 0.05rem;
+      position: relative; }
+      .contents .home h5 span {
+        position: absolute;
+        right: 0.1rem;
+        font-size: 0.12rem;
+        color: #ccc; }
+    .contents .home .home-photo {
+      height: 1.2rem;
+      display: flex; }
+      .contents .home .home-photo p {
+        flex: 1;
+        height: 100%; }
+        .contents .home .home-photo p img {
+          width: 100%;
+          height: 100%; }
+  .contents .hobby {
+    height: auto;
+    background-color: #fff; }
+    .contents .hobby h5 {
+      position: relative;
+      margin-bottom: 0.1rem; }
+      .contents .hobby h5 span {
+        position: absolute;
+        right: 0.1rem;
+        font-size: 0.12rem;
+        color: #ccc; }
+    .contents .hobby .list-hobby {
+      display: flex;
+      flex-wrap: wrap; }
+      .contents .hobby .list-hobby dl {
+        width: 49.8%;
+        clear: both;
+        border: 1px solid #ccc;
+        border-left: 0;
+        border-bottom: 0; }
+        .contents .hobby .list-hobby dl dt {
+          width: 1.35rem;
+          height: 0.8rem;
+          margin: 0 auto; }
+          .contents .hobby .list-hobby dl dt img {
+            width: 100%;
+            height: 100%; }
+        .contents .hobby .list-hobby dl dd {
+          margin: 0.1rem; }
+          .contents .hobby .list-hobby dl dd h4 {
+            font-size: .14rem; }
+          .contents .hobby .list-hobby dl dd .mess {
+            color: #ccc; }
+          .contents .hobby .list-hobby dl dd p {
+            padding-top: 0.15rem; }
+            .contents .hobby .list-hobby dl dd p .price {
+              font-size: .16rem; }
+            .contents .hobby .list-hobby dl dd p .price-t {
+              text-decoration: line-through;
+              color: #ccc; }
+
+.footer {
+  display: flex;
+  height: 0.48rem;
+  background-color: #fbfbfb; }
+  .footer dl {
+    flex: 1;
+    text-align: center;
+    padding: 0.05rem 0; }
+
+/*# sourceMappingURL=style.css.map */

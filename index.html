@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=2,maximum-scale=1,user-scalable=no">
+	<title></title>
+	<link type="text/css" rel="stylesheet" href="css/font-awesome.css">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+	<!--<link type="text/css" rel="stylesheet" href="css/ionic.min.css">-->
+	<link type="text/css" rel="stylesheet" href="css/reset.css">
+	<link type="text/css" rel="stylesheet" href="css/common.css">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body id="body">
+<header class="header">
+	<ul class="list">
+		<li><a ng-href="#/underway">服务</a></li>
+		<li><a ng-href="#/underway">金融</a></li>
+	</ul>
+
+	<span class="search">
+		<i class="fa fa-search"></i>
+	</span>
+</header>
+
+<ng-view>
+
+</ng-view>
+<footer class="footer">
+	<dl>
+		<dt>
+			<i class="fa fa-question"></i>
+		</dt>
+		<dd>
+			首页
+		</dd>
+	</dl>
+	<dl>
+		<dt>
+			<i class="fa fa-weibo"></i>
+		</dt>
+		<dd>
+			论坛
+		</dd>
+	</dl>
+	<dl>
+		<dt>
+			<i class="fa fa-google"></i>
+		</dt>
+		<dd>
+			选车
+		</dd>
+	</dl>
+	<dl>
+		<dt>
+			<i class="fa fa-heart"></i>
+		</dt>
+		<dd>
+			发现
+		</dd>
+	</dl>
+	<dl>
+		<dt>
+			<i class="fa fa-joomla"></i>
+		</dt>
+		<dd>
+			未登录
+		</dd>
+	</dl>
+</footer>
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+
+
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="js/ionic/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="App/app.js"></script>
+<!--工厂模式获取后台数据-->
+<script type="text/javascript" src="App/Factory/menuFactory.js"></script>
+
+<!--controler.js 绑定数据 传给自定义指令-->
+<script type="text/javascript" src="App/Controller/menuController.js"></script>
+
+<script type="text/javascript" src="App/Directive/menuDirective.js"></script>
+
+
+<script type="text/javascript">
+	$("ul").on("click", "li", function () {
+		$(this).find("a").addClass("acb").parent().siblings().children("a").removeClass("acb");
+	});
+</script>
+</body>
+</html>

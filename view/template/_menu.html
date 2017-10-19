@@ -1,0 +1,190 @@
+<div class="contents">
+	<div class="banner">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="img/bj.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/lb.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/ls.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/mk.jpg" alt="">
+				</div>
+
+				<div class="swiper-slide">
+					<img src="img/ms.jpg" alt="">
+				</div>
+			</div>
+			<div class="swiper-pagination">
+				<span></span>
+			</div>
+		</div>
+	</div>
+
+
+
+	 <div class="nav pt10">
+		 <dl class="">
+			 <dt class="bg-orange">
+                 <i class="fa fa-shopping-bag fa-2x"></i>
+			 </dt>
+			 <dd class="pt10">
+                  车商城
+			 </dd>
+		 </dl>
+		 <dl>
+			 <dt class="bg-green">
+				 <i class="fa fa-stethoscope fa-2x"></i>
+			 </dt>
+			 <dd class="pt10">
+				 分期购车
+			 </dd>
+		 </dl>
+		 <dl>
+			 <dt class="bg-blue">
+				 <i class="fa fa-meanpath fa-2x"></i>
+			 </dt>
+			 <dd class="pt10">
+				 团购二手车
+			 </dd>
+		 </dl>
+		 <dl>
+			 <dt class="bg-fuchsia">
+				 <i class="fa fa-calendar fa-2x"></i>
+			 </dt>
+			 <dd class="pt10">
+				 找二手车
+			 </dd>
+		 </dl>
+	 </div>
+	<div class="limit">
+		<img src="img/xs.jpg" alt="">
+	</div>
+
+
+	<div class="owner">
+		<h5 class="pl10 pt10 pb10">车主服务</h5>
+
+		<ul id="list">
+			<li class="br">
+				<p><i class="fa fa-bluetooth fa-2x text-orange"></i></p>
+				<p>油卡充值</p>
+			</li>
+			<li>
+				<p><i class="fa fa-question fa-2x text-gray"></i></p>
+				<p>低价保险</p>
+			</li>
+			<li class="br">
+				<p><i class="fa fa-weibo fa-2x text-blue"></i></p>
+				<p>4S店保养</p>
+			</li>
+			<li>
+				<p><i class="fa fa-edge fa-2x text-red"></i></p>
+				<p>品质轮胎</p>
+			</li>
+			<li class="br">
+				<p><i class="fa fa-th-large fa-2x text-danger"></i></p>
+				<p>车品商城</p>
+			</li>
+			<li>
+				<p><i class="fa fa-yahoo fa-2x text-blue"></i></p>
+				<p>洗车</p>
+			</li>
+			<li class="br">
+				<p><i class="fa fa-user fa-2x text-red"></i></p>
+				<p>违章代缴</p>
+			</li>
+			<li>
+				<p><i class="fa fa-dashcube fa-2x text-orange"></i></p>
+				<p>免费测评</p>
+			</li>
+			<li class="br">
+				<p><i class="fa fa-facebook fa-2x text-red"></i></p>
+				<p>查周边</p>
+			</li>
+			<li>
+				<p><i class="fa fa-safari fa-2x text-blue"></i></p>
+				<p>车主卡</p>
+			</li>
+			<li class="br">
+				<p><i class="fa fa-address-book fa-2x text-orange"></i></p>
+				<p>领劵保养</p>
+			</li>
+			<li>
+				<p><i class="fa fa-opencart fa-2x"></i></p>
+				<p>全部</p>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="rush mt10 bg-white">
+       <h5>限时抢购 <p id="date"></p></h5>
+		<div class="swiper-container mt10 ml10 ">
+			<div class="swiper-wrapper">
+				<div class="banner swiper-slide">
+					<img src="img/shop-1.jpg" alt="">
+				</div>
+				<div class="banner swiper-slide">
+					<img src="img/shop-2.jpg" alt="">
+				</div>
+
+				<div class="banner swiper-slide">
+					<img src="img/shop-3.jpg" alt="">
+				</div>
+
+				<div class="banner swiper-slide">
+					<img src="img/shop-1.jpg" alt="">
+				</div>
+				<div class="banner swiper-slide">
+					<img src="img/shop-2.jpg" alt="">
+				</div>
+				<div class="banner swiper-slide">
+					<img src="img/shop-3.jpg" alt="">
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="home">
+		<h5 class="ml15 mt10">活动专区 <span class="more">更多活动&nbsp;  <i class="fa fa-angle-right"></i></span></h5>
+		<div class="home-photo">
+			<p><img src="img/home-1.jpg" alt=""></p>
+			<p><img src="img/home-2.jpg" alt=""></p>
+			<p><img src="img/home-3.jpg" alt=""></p>
+
+		</div>
+
+	</div>
+
+
+	<div class="hobby mt10 ">
+
+		<h5 class="ml15 pt10">活动专区 <span class="more">更多&nbsp;  <i class="fa fa-angle-right"></i></span></h5>
+        <div class="list-hobby">
+
+
+			<dl ng-repeat="val in menu">
+				<dt>
+					<img ng-src={{val.img}} alt="">
+				</dt>
+				<dd>
+					<h4>{{val.title}}</h4>
+
+					<p class="mess">{{val.p1}}</p>
+
+					<p><span class="price text-orange">{{val.price}}</span> <span class="price-t text-gray">{{val.pricetwo}}</span></p>
+				</dd>
+			</dl>
+
+
+		</div>
+
+	</div>
+
+</div>
